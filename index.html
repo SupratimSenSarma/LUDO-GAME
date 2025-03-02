@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ludo Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Introductory Page -->
+  <div id="intro-page" class="intro-page">
+    <h1>Welcome to Ludo Game!</h1>
+    <p>Roll the dice and move your pieces around the board to reach the home base first!</p>
+    <button onclick="startGame()">Start Game</button>
+  </div>
+
+  <!-- Game Board -->
+  <div id="game-board" class="game-board" style="display: none;">
+    <div class="board">
+      <div class="ludo-section red">
+        <div class="piece" id="red-piece" onclick="movePiece('red')"></div>
+      </div>
+      <div class="ludo-section green">
+        <div class="piece" id="green-piece" onclick="movePiece('green')"></div>
+      </div>
+      <div class="ludo-section yellow">
+        <div class="piece" id="yellow-piece" onclick="movePiece('yellow')"></div>
+      </div>
+      <div class="ludo-section blue">
+        <div class="piece" id="blue-piece" onclick="movePiece('blue')"></div>
+      </div>
+    </div>
+    <p id="player-turn">It's Player 1's turn!</p>
+    <button onclick="rollDice()">Roll Dice 🎲</button>
+    <div id="dice-roll"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
